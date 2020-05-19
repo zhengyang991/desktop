@@ -55,7 +55,7 @@ export default {
     electronContextMenu({
       window: win.webContents ? win : {...win, webContents: win.getWebContents()},
       prepend(_defaultActions, params) {
-        if (actualOptions.useSpellChecker) {
+        if (false) {
           const prependMenuItems = [];
           if (params.isEditable && params.misspelledWord !== '') {
             const suggestions = ipcRenderer.sendSync('get-spelling-suggestions', params.misspelledWord);

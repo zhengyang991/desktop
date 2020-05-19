@@ -476,7 +476,7 @@ function handleAppWebContentsCreated(dc, contents) {
     }
 
     log.info(`Prevented desktop from navigating to: ${url}`);
-    event.preventDefault();
+    // event.preventDefault();
   });
 
   // handle custom login requests (oath, saml):

@@ -38,26 +38,26 @@ export default function ErrorView(props) {
               md={10}
               lg={8}
             >
-              <h2>{`Cannot connect to ${remote.app.name}`}</h2>
+              <h2>{`无法连接到 ${remote.app.name}`}</h2>
               <hr/>
-              <p>{`We're having trouble connecting to ${remote.app.name}. If refreshing this page (Ctrl+R or Command+R) does not work please verify that:`}</p>
+              <p>{`我们无法连接到 ${remote.app.name}. 如果刷新此页（Ctrl+R或Command+R）不起作用，请验证:`}</p>
               <br/>
               <ul className='ErrorView-bullets' >
-                <li>{'Your computer is connected to the internet.'}</li>
-                <li>{`The ${remote.app.name} URL `}
+                <li>{'您的计算机已连接到internet。'}</li>
+                <li>{`${remote.app.name} 地址 `}
                   <a
                     onClick={handleClick}
                     href={props.errorInfo.validatedURL}
                   >
                     {props.errorInfo.validatedURL}
-                  </a>{' is correct.'}</li>
-                <li>{'You can reach '}
+                  </a>{' 是正确的。'}</li>
+                <li>{'你可以通过浏览器访问'}
                   <a
                     onClick={handleClick}
                     href={props.errorInfo.validatedURL}
                   >
                     {props.errorInfo.validatedURL}
-                  </a>{' from a browser window.'}</li>
+                  </a></li>
               </ul>
               <br/>
               <div className='ErrorView-techInfo'>

@@ -34,7 +34,7 @@ export default class ExtraBar extends React.Component {
           >
             <span className={'backIcon fa fa-1x fa-angle-left'}/>
             <span className={'backLabel'}>
-              {'Back'}
+              {'返回'}
             </span>
           </Button>
         </div>
